@@ -2721,8 +2721,8 @@ color@^4.2.3:
   resolved "https://registry.npmjs.org/color/-/color-4.2.3.tgz"
   integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
   dependencies:
-    color-string "^1.9.0"
     color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 color-convert@^2.0.1:
   version "2.0.1"
@@ -3480,7 +3480,7 @@ es-to-primitive@^1.3.0:
     is-date-object "^1.0.5"
     is-symbol "^1.0.4"
 
-esbuild@>=0.13, esbuild@^0.14.27:
+esbuild@*, esbuild@>=0.13, esbuild@^0.14.27:
   version "0.14.54"
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.14.54.tgz"
   integrity sha512-Cy9llcy8DvET5uznocPyqL3BFRrFXSVqbgpMJ9Wz8oVjZlh/zUSNbPRbov0VX7VxN2JH1Oa0uNxZ7eLRb62pJA==
@@ -3507,33 +3507,33 @@ esbuild@>=0.13, esbuild@^0.14.27:
     esbuild-windows-64 "0.14.54"
     esbuild-windows-arm64 "0.14.54"
 
-esbuild@*, esbuild@0.17.19:
+esbuild@0.17.19:
   version "0.17.19"
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.17.19.tgz"
   integrity sha512-XQ0jAPFkK/u3LcVRcvVHQcTIqD6E2H1fvZMA5dQPSOWb3suUbWbfbRf94pjc0bNzRYLfIrDRQXr7X+LHIm5oHw==
   optionalDependencies:
-    "@esbuild/linux-arm" "0.17.19"
-    "@esbuild/linux-x64" "0.17.19"
-    "@esbuild/sunos-x64" "0.17.19"
-    "@esbuild/win32-x64" "0.17.19"
-    "@esbuild/darwin-x64" "0.17.19"
-    "@esbuild/linux-ia32" "0.17.19"
-    "@esbuild/netbsd-x64" "0.17.19"
-    "@esbuild/win32-ia32" "0.17.19"
     "@esbuild/android-arm" "0.17.19"
-    "@esbuild/android-x64" "0.17.19"
-    "@esbuild/freebsd-x64" "0.17.19"
-    "@esbuild/linux-arm64" "0.17.19"
-    "@esbuild/linux-ppc64" "0.17.19"
-    "@esbuild/linux-s390x" "0.17.19"
-    "@esbuild/openbsd-x64" "0.17.19"
-    "@esbuild/win32-arm64" "0.17.19"
-    "@esbuild/darwin-arm64" "0.17.19"
     "@esbuild/android-arm64" "0.17.19"
+    "@esbuild/android-x64" "0.17.19"
+    "@esbuild/darwin-arm64" "0.17.19"
+    "@esbuild/darwin-x64" "0.17.19"
     "@esbuild/freebsd-arm64" "0.17.19"
+    "@esbuild/freebsd-x64" "0.17.19"
+    "@esbuild/linux-arm" "0.17.19"
+    "@esbuild/linux-arm64" "0.17.19"
+    "@esbuild/linux-ia32" "0.17.19"
     "@esbuild/linux-loong64" "0.17.19"
-    "@esbuild/linux-riscv64" "0.17.19"
     "@esbuild/linux-mips64el" "0.17.19"
+    "@esbuild/linux-ppc64" "0.17.19"
+    "@esbuild/linux-riscv64" "0.17.19"
+    "@esbuild/linux-s390x" "0.17.19"
+    "@esbuild/linux-x64" "0.17.19"
+    "@esbuild/netbsd-x64" "0.17.19"
+    "@esbuild/openbsd-x64" "0.17.19"
+    "@esbuild/sunos-x64" "0.17.19"
+    "@esbuild/win32-arm64" "0.17.19"
+    "@esbuild/win32-ia32" "0.17.19"
+    "@esbuild/win32-x64" "0.17.19"
 
 esbuild-android-64@0.14.54:
   version "0.14.54"
@@ -5668,17 +5668,17 @@ miniflare@3.20250718.2:
   resolved "https://registry.npmjs.org/miniflare/-/miniflare-3.20250718.2.tgz"
   integrity sha512-cW/NQPBKc+fb0FwcEu+z/v93DZd+/6q/AF0iR0VFELtNPOsCvLalq6ndO743A7wfZtFxMxvuDQUXNx3aKQhOwA==
   dependencies:
-    ws "8.18.0"
-    zod "3.22.3"
+    "@cspotcode/source-map-support" "0.8.1"
     acorn "8.14.0"
-    youch "3.3.4"
+    acorn-walk "8.3.2"
+    exit-hook "2.2.1"
+    glob-to-regexp "0.4.1"
+    stoppable "1.1.0"
     undici "^5.28.5"
     workerd "1.20250718.0"
-    exit-hook "2.2.1"
-    stoppable "1.1.0"
-    acorn-walk "8.3.2"
-    glob-to-regexp "0.4.1"
-    "@cspotcode/source-map-support" "0.8.1"
+    ws "8.18.0"
+    youch "3.3.4"
+    zod "3.22.3"
 
 minimalistic-assert@^1.0.0:
   version "1.0.1"
@@ -6755,30 +6755,30 @@ sharp@^0.33.5:
   version "0.33.5"
   resolved "https://registry.npmjs.org/sharp/-/sharp-0.33.5.tgz"
   integrity sha512-haPVm1EkS9pgvHrQ/F3Xy+hgcuMV0Wm9vfIBSiwZ05k+xgb0PkBQpGsAA/oWdDobNaZTH5ppvHtzCFbnSEwHVw==
-  dependencies:
-    color "^4.2.3"
-    semver "^7.6.3"
-    detect-libc "^2.0.3"
   optionalDependencies:
-    "@img/sharp-wasm32" "0.33.5"
-    "@img/sharp-linux-arm" "0.33.5"
-    "@img/sharp-linux-x64" "0.33.5"
-    "@img/sharp-win32-x64" "0.33.5"
-    "@img/sharp-darwin-x64" "0.33.5"
-    "@img/sharp-win32-ia32" "0.33.5"
-    "@img/sharp-linux-arm64" "0.33.5"
-    "@img/sharp-linux-s390x" "0.33.5"
     "@img/sharp-darwin-arm64" "0.33.5"
-    "@img/sharp-linuxmusl-x64" "0.33.5"
-    "@img/sharp-linuxmusl-arm64" "0.33.5"
-    "@img/sharp-libvips-linux-arm" "1.0.5"
-    "@img/sharp-libvips-linux-x64" "1.0.4"
+    "@img/sharp-darwin-x64" "0.33.5"
+    "@img/sharp-libvips-darwin-arm64" "1.0.4"
     "@img/sharp-libvips-darwin-x64" "1.0.4"
+    "@img/sharp-libvips-linux-arm" "1.0.5"
     "@img/sharp-libvips-linux-arm64" "1.0.4"
     "@img/sharp-libvips-linux-s390x" "1.0.4"
-    "@img/sharp-libvips-darwin-arm64" "1.0.4"
-    "@img/sharp-libvips-linuxmusl-x64" "1.0.4"
+    "@img/sharp-libvips-linux-x64" "1.0.4"
     "@img/sharp-libvips-linuxmusl-arm64" "1.0.4"
+    "@img/sharp-libvips-linuxmusl-x64" "1.0.4"
+    "@img/sharp-linux-arm" "0.33.5"
+    "@img/sharp-linux-arm64" "0.33.5"
+    "@img/sharp-linux-s390x" "0.33.5"
+    "@img/sharp-linux-x64" "0.33.5"
+    "@img/sharp-linuxmusl-arm64" "0.33.5"
+    "@img/sharp-linuxmusl-x64" "0.33.5"
+    "@img/sharp-wasm32" "0.33.5"
+    "@img/sharp-win32-ia32" "0.33.5"
+    "@img/sharp-win32-x64" "0.33.5"
+  dependencies:
+    color "^4.2.3"
+    detect-libc "^2.0.3"
+    semver "^7.6.3"
 
 shebang-command@^2.0.0:
   version "2.0.0"
@@ -7464,11 +7464,11 @@ undici@^5.28.5:
   resolved "https://registry.npmjs.org/unenv/-/unenv-2.0.0-rc.14.tgz"
   integrity sha512-od496pShMen7nOy5VmVJCnq8rptd45vh6Nx/r2iPbrba6pa6p+tS2ywuIHRZ/OBvSbQZB0kWvpO9XBNVFXHD3Q==
   dependencies:
-    ufo "^1.5.4"
     defu "^6.1.4"
+    exsolve "^1.0.1"
     ohash "^2.0.10"
     pathe "^2.0.3"
-    exsolve "^1.0.1"
+    ufo "^1.5.4"
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.1"
@@ -8144,30 +8144,30 @@ workerd@1.20250718.0, workerd@^1.20250124.0:
   resolved "https://registry.npmjs.org/workerd/-/workerd-1.20250718.0.tgz"
   integrity sha512-kqkIJP/eOfDlUyBzU7joBg+tl8aB25gEAGqDap+nFWb+WHhnooxjGHgxPBy3ipw2hnShPFNOQt5lFRxbwALirg==
   optionalDependencies:
-    "@cloudflare/workerd-linux-64" "1.20250718.0"
     "@cloudflare/workerd-darwin-64" "1.20250718.0"
-    "@cloudflare/workerd-windows-64" "1.20250718.0"
-    "@cloudflare/workerd-linux-arm64" "1.20250718.0"
     "@cloudflare/workerd-darwin-arm64" "1.20250718.0"
+    "@cloudflare/workerd-linux-64" "1.20250718.0"
+    "@cloudflare/workerd-linux-arm64" "1.20250718.0"
+    "@cloudflare/workerd-windows-64" "1.20250718.0"
 
 wrangler@^3.0.0:
   version "3.114.15"
   resolved "https://registry.npmjs.org/wrangler/-/wrangler-3.114.15.tgz"
   integrity sha512-OpGikaV6t7AGXZImtGnVXI8WUnqBMFBCQcZzqKmQi0T/pZ5h8iSKhEZf7ItVB8bAG56yswHnWWYyANWF/Jj/JA==
+  optionalDependencies:
+    fsevents "~2.3.2"
+    sharp "^0.33.5"
   dependencies:
-    unenv "2.0.0-rc.14"
-    esbuild "0.17.19"
-    workerd "1.20250718.0"
-    miniflare "3.20250718.2"
-    blake3-wasm "2.1.5"
-    path-to-regexp "6.3.0"
-    "@cloudflare/unenv-preset" "2.0.2"
     "@cloudflare/kv-asset-handler" "0.3.4"
+    "@cloudflare/unenv-preset" "2.0.2"
     "@esbuild-plugins/node-globals-polyfill" "0.2.3"
     "@esbuild-plugins/node-modules-polyfill" "0.2.2"
-  optionalDependencies:
-    sharp "^0.33.5"
-    fsevents "~2.3.2"
+    blake3-wasm "2.1.5"
+    esbuild "0.17.19"
+    miniflare "3.20250718.2"
+    path-to-regexp "6.3.0"
+    unenv "2.0.0-rc.14"
+    workerd "1.20250718.0"
 
 wrap-ansi@^6.2.0:
   version "6.2.0"
